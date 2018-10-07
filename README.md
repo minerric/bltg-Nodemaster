@@ -18,10 +18,6 @@ Install & configure your desired master node with options:
 ./install.sh -p odin
 ```
 
-```bash
-./install.sh -p odin -n 4/6
-```
-
 **Install & configure 4 ODIN masternodes:**
 
 ```bash
