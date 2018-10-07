@@ -4,11 +4,6 @@ The **Nodemaster** scripts is a collection of utilities to manage, setup and upd
 
 I am quite confident this is the single best and almost effortless way to setup different crypto masternodes, without bothering too much about the setup part.
 
-If this script helped you in any way, please contribute some feedback. BTC donations also welcome and never forget:
-
-**Have fun, this is crypto after all!**
-
-
 ## Installation
 
 SSH to your VPS and clone the Github repository:
