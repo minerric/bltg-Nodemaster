@@ -343,13 +343,13 @@ function create_systemd_configuration() {
 			PIDFile=${MNODE_DATA_BASE}/${CODENAME}${NUM}/${CODENAME}.pid
 			ExecStart=${MNODE_DAEMON} -daemon -pid=${MNODE_DATA_BASE}/${CODENAME}${NUM}/${CODENAME}.pid -conf=${MNODE_CONF_BASE}/${CODENAME}_n${NUM}.conf -datadir=${MNODE_DATA_BASE}/${CODENAME}${NUM}
 
-			Restart=on-failure
-			RestartSec=8
+			Restart=always
+			RestartSec=5
 			PrivateTmp=true
 			TimeoutStopSec=60s
 			TimeoutStartSec=5s
 			StartLimitInterval=120s
-			StartLimitBurst=5
+			StartLimitBurst=15
 
 			[Install]
 			WantedBy=multi-user.target
