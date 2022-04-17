@@ -9,47 +9,47 @@ I am quite confident this is the single best and almost effortless way to setup 
 SSH to your VPS and clone the Github repository:
 
 ```bash
-git clone https://github.com/lancehall123/Odin-Nodemaster.git && cd Odin-Nodemaster/vps
+git clone https://github.com/minerric/bltg-Nodemaster.git && cd bltg-Nodemaster/vps
 ```
 
 Install & configure your desired master node with options:
 
 ```bash
-./install.sh -p odin
+./install.sh -p bltg
 ```
 
 ```bash
-./install.sh -p odin -n 4/6
+./install.sh -p bltg -n 4/6
 ```
 
-**Install & configure 4 ODIN masternodes:**
+**Install & configure 4 bltg masternodes:**
 
 ```bash
-./install.sh -p odin -c 4
+./install.sh -p bltg -c 4
 ```
 
-**Update daemon of previously installed ODIN masternodes:**
+**Update daemon of previously installed bltg masternodes:**
 
 ```bash
-./install.sh -p odin -u
+./install.sh -p bltg -u
 ```
 
-**Install 6 ODIN masternodes with the git release tag "tags/??"**
+**Install 6 bltg masternodes with the git release tag "tags/??"**
 
 ```bash
-./install.sh -p odin -c 6 -r "tags/??"
+./install.sh -p bltg -c 6 -r "tags/??"
 ```
 
-**Wipe all ODIN masternode data:**
+**Wipe all bltg masternode data:**
 
 ```bash
-./install.sh -p odin -w
+./install.sh -p bltg -w
 ```
 
-**Install 2 ODIN masternodes and configure sentinel monitoring:**
+**Install 2 bltg masternodes and configure sentinel monitoring:**
 
 ```bash
-./install.sh -p odin -c 2 -s
+./install.sh -p bltg -c 2 -s
 ```
 
 ## Options
@@ -58,7 +58,7 @@ The _install.sh_ script support the following parameters:
 
 | Long Option  | Short Option | Values              | description                                                         |
 | :----------- | :----------- | ------------------- | ------------------------------------------------------------------- |
-| --project    | -p           | project, e.g. "odin" | shortname for the project                                           |
+| --project    | -p           | project, e.g. "bltg" | shortname for the project                                           |
 | --net        | -n           | "4" / "6"           | ip type for masternode. (ipv)6 is default                           |
 | --release    | -r           | e.g. "tags/v3.0.4"  | a specific git tag/branch, defaults to latest tested                |
 | --count      | -c           | number              | amount of masternodes to be configured                              |
@@ -70,10 +70,10 @@ The _install.sh_ script support the following parameters:
 
 ## Troubleshooting the masternode on the VPS
 
-If you want to check the status of your masternode, the best way is currently running the cli e.g. for $ODIN via
+If you want to check the status of your masternode, the best way is currently running the cli e.g. for $bltg via
 
 ```
-/usr/local/bin/odin-cli -conf=/etc/masternodes/odin_n1.conf getinfo
+/usr/local/bin/bltg-cli -conf=/etc/masternodes/bltg_n1.conf getinfo
 
 ```
 
